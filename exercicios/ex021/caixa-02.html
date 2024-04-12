@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 102, 255, 0.404);
+            margin: 0px;
+        }
+        header{
+            background-color: rgba(183, 250, 0, 0.534);
+            padding-left: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: blanchedalmond;
+            padding: 5px;
+            box-shadow: 1px 1px 5px rgba(22, 21, 21, 0.24);
+        }
+        nav > a{
+            text-decoration: none;
+            color: grey;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: aqua;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.411);
+        }
+        article{
+            background-color: blueviolet;
+            box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.438);
+            
+        }
+        article > aside{
+            background-color: rgb(38, 8, 66);
+        }
+        footer{
+            background-color: aquamarine;
+            color: blue;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border-radius: 50%;
+            box-shadow: 5px 9px 33px 15px rgba(14, 13, 13, 0.623);
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, aliquam ratione nesciunt ducimus dicta ex quam. Repudiandae, consectetur sint labore iusto alias voluptates ratione quae modi quam quibusdam et tenetur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis expedita consequatur debitis fugiat maiores tenetur corrupti eligendi commodi molestiae, sed temporibus amet voluptatem non, asperiores aspernatur dolore harum, in voluptatum!</p>
+                <aside>
+                    <p>Artigo escrito por visual code.</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 por Alexandre de Sousa via curso em vídeo.</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
