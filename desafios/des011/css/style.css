@@ -24,7 +24,7 @@ html, body{
 
 }
 header{
-    background-color: black;
+    background-image: linear-gradient(to bottom, rgb(28, 218, 138), rgb(15, 7, 37));
     color: #fff;
     text-align: center;
 }
@@ -53,6 +53,9 @@ section{
     font-family: var(--fonte3);
     font-size: 3.5vw;
 }
+section > p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: #fff;
     color: #000;
@@ -61,11 +64,26 @@ section.normal{
 section.imagem{
     background-color: #131313cc;
     color: #fff;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.322);
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem > p{
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.404);
     padding: 8px;
+    background-color: rgba(0, 0, 0, 0.473);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+    
+
+}
+section#img01{
+    background-image: url(../img/background001.jpg);
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url(../img/background002.jpg);
+    
 }
 footer{
     background-color: black;
