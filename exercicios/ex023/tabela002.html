@@ -13,6 +13,7 @@
         width: 500px;
         border-collapse: collapse;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.466);
+        position: relative;
     }
     caption{
         font-size: 1.5em;
@@ -21,6 +22,11 @@
         background-image:linear-gradient(to bottom,gray,darkgray,lightgray,darkgray, gray);
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.466);
 
+    }
+    thead > tr > th {
+        position: sticky;
+        top: 0;
+        background-color: #0f0f0f;
     }
     td , th{
         border: 1px solid black;
@@ -38,7 +44,7 @@
     }
     td.num{
         text-align: right;
-    }
+    }2
 </style>
 
 </head>
