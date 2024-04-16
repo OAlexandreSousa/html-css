@@ -12,13 +12,22 @@
     table{
         width: 500px;
         border-collapse: collapse;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.466);
+    }
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-image:linear-gradient(to bottom,gray,darkgray,lightgray,darkgray, gray);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.466);
+
     }
     td , th{
         border: 1px solid black;
         padding: 8px; 
     }
     thead , tfoot{
-        background-color: darkgrey;
+        background-color: #0f0f0f;
         color: azure;
     }
     td.num{
@@ -41,10 +50,11 @@
               TR TD TH
     -->
     <table>
+        <caption>População dos Estados Brasileiros</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width:50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -159,7 +169,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>203.062.512</strong></td>
             </tr>
         </tfoot>
