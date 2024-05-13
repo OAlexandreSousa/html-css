@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <style>
+        body {
+            background-color: rgba(49, 124, 173, 0.445);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            align-items: center;
+            background-color: whitesmoke;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: 1px solid rgba(0, 0, 0, 0.336);
+            width: 350px;
+            background-color: rgb(194, 214, 219);
+            border-radius: 8px;
+            box-shadow: 3px 3px 9px rgba(0, 53, 122, 0.192);
+            padding-left: 10px;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Teste de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="inome">Nome: </label>
-            <input type="text" name="nome" id="inome" required minlength="15" maxlength="30" placeholder="nome completo" autocomplete="name" required>
+            <input type="text" name="nome" id="inome" required minlength="15" maxlength="30" placeholder="nome completo"
+                autocomplete="name" required>
         </p>
         <p>
             <label for="imedia">Média: </label>
@@ -35,4 +60,5 @@
 
     </form>
 </body>
+
 </html>
